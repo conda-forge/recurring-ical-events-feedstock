@@ -19,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python ${{ python_min }}
+    - python ${{ python_min }}.*
     - pip
     - setuptools
     - hatchling
@@ -37,7 +37,7 @@ tests:
       imports:
         - recurring_ical_events
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version: ${{ python_min }}.*
 
 about:
   summary: A Python module which repeats ICalendar events by RRULE, RDATE and EXDATE.
